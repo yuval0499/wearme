@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">arT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="item_price">item price</string>
+    <string name="item_name">item name</string>
+    <string name="artist_name">artist name</string>
+    <string name="info1">1. The platform is not responsible for the copyright of the items displayed.</string>
+    <string name="info2">2. The publication of the mail of the advertiser is published only for the purpose of contacting the advertisers regarding the works published in the application and there is no other use for it. \n</string>
+    <string name="info3">3. As a seller, I acknowledge that the items I upload are the product of my creativity.</string>
+    <string name="app_label">arT</string>
+    <string name="search_hint">search a product...</string>
+    <string name="search_title">search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

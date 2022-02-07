@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="fill"
+        android:drawable="@drawable/login_icon_background"
+
+        />
+    <item
+        android:gravity="center"
+        android:drawable="@drawable/login_icon"
+        android:top="20dp"
+        android:bottom="20dp"
+        android:left="20dp"
+        android:right="20dp"
+        />
+
+</layer-list>
