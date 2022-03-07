@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signInFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".fragment_signin">
+
+    <TextView
+        android:id="@+id/tvJoinHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="VIEW YOUR ORDERS AND UPDATE YOUR DETAILS"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvJoinUs"
+        app:layout_constraintStart_toStartOf="@+id/tvJoinUs"
+        app:layout_constraintTop_toBottomOf="@+id/tvJoinUs" />
+
+    <TextView
+        android:id="@+id/tvJoinUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="COME ON IN !"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signinEmailTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorAccent"
+        app:boxBackgroundColor="@color/background"
+        app:layout_constraintEnd_toEndOf="@+id/tvJoinHeadline"
+        app:layout_constraintStart_toStartOf="@+id/tvJoinHeadline"
+        app:layout_constraintTop_toBottomOf="@+id/tvJoinHeadline">
+
+        <EditText
+            android:id="@+id/et_signin_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signinPasswordTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorAccent"
+        app:boxBackgroundColor="@color/background"
+        app:layout_constraintEnd_toEndOf="@+id/signinEmailTextLayout"
+        app:layout_constraintStart_toStartOf="@id/signinEmailTextLayout"
+        app:layout_constraintTop_toBottomOf="@id/signinEmailTextLayout">
+
+        <EditText
+            android:id="@+id/et_signin_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/signinLoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_rounded"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/signinPasswordTextLayout"
+        app:layout_constraintStart_toStartOf="@id/signinPasswordTextLayout"
+        app:layout_constraintTop_toBottomOf="@id/signinPasswordTextLayout" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="DON'T HAVE AN ACCOUNT ? JOIN US"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/signinLoginButton"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/signinLoginButton"
+        app:layout_constraintTop_toBottomOf="@+id/signinLoginButton" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvRegister"
+        app:layout_constraintStart_toStartOf="@+id/tvRegister"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegister" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "564107628789",
-    "project_id": "wearme-740fb",
-    "storage_bucket": "wearme-740fb.appspot.com"
+    "project_number": "954169009482",
+    "project_id": "wearmeproj",
+    "storage_bucket": "wearmeproj.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:564107628789:android:11aa653981dfe96d3cb5bc",
+        "mobilesdk_app_id": "1:954169009482:android:f957ad188ba6cfe4fd0db3",
         "android_client_info": {
           "package_name": "com.example.wearme"
         }
       },
       "oauth_client": [
         {
-          "client_id": "564107628789-r04o9sedrk5c7antegc4a353bv3rjlt7.apps.googleusercontent.com",
+          "client_id": "954169009482-va7bqunuvm3idndp4d823hu65t21qk92.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBMBJaFpofxzf7v0J2yyPw6ORp9jYleWgE"
+          "current_key": "AIzaSyAQX96913p5yau0D1eaXBjqqeDPfZrhuq4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "564107628789-r04o9sedrk5c7antegc4a353bv3rjlt7.apps.googleusercontent.com",
+              "client_id": "954169009482-va7bqunuvm3idndp4d823hu65t21qk92.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

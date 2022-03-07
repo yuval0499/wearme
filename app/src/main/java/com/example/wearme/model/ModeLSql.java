@@ -8,7 +8,8 @@ import java.util.List;
 
 public class ModeLSql {
     public LiveData<List<Item>> getAllItems() {
-        return AppLocalDB.db.itemDao().getAllItems();
+        AppLocalDBRepository bla = AppLocalDB.db;
+        return bla.itemDao().getAllItems();
     }
 
     public List<Item> getCurrentUserItems(String currUser) {

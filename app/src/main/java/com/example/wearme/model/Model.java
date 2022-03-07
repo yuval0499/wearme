@@ -29,6 +29,9 @@ public class Model {
             itemsList = modeLSql.getAllItems();
             refreshAllItems(null);
         }
+        if(itemsList.getValue()!=null){
+            float a =3;
+        }
         return itemsList;
     }
 
@@ -52,11 +55,20 @@ public class Model {
         modelFirebase.getAllItems(lastUpdated, new ModelFirebase.GetAllItemsListener() {
             @Override
             public void onComplete(List<Item> result) {
+                LiveData<List<Item>> currItems = modeLSql.getAllItems();
                 long lastU = 0;
                 for (Item item : result) {
                     modeLSql.addItem(item, null);
                     if (item.getLastUpdated() > lastU) {
                         lastU = item.getLastUpdated();
+                    }
+                }
+                // check if we got on memory item that was deleted
+                if (itemsList.getValue() != null) {
+                    for (Item item : itemsList.getValue()) {
+                        if (! result.stream().anyMatch(p -> p.getId().equals(item.getId()))){
+                            modeLSql.deleteItem(item);
+                        }
                     }
                 }
                 sp.edit().putLong("lastUpdated", lastU).commit();

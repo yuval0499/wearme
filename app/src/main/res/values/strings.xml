@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">wearme</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="item_price">item price</string>
+    <string name="item_name">item name</string>
+    <string name="artist_name">artist name</string>
+    <string name="info1">1. The platorm is not responsible  for clothes quality, shipping, copyrights and price.</string>
+    <string name="info2">2. As a seller, I am obligated to upload items that I created by myself, copyright violation will cause a suspension. \n</string>
+    <string name="info3">3. As a seller, its my responsibility to upload imtems images that reflects their actual condition and appearance, the platform is not responsible for the direct communication with the buyers.</string>
+    <string name="app_label">wearme</string>
+    <string name="search_hint">search a product...</string>
+    <string name="search_title">search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
